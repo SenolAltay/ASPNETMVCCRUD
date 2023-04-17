@@ -1,0 +1,40 @@
+﻿@model List<ASPNETMVCCRUD.Models.Domain.Product>
+@{
+}
+<body>
+<h1>Ürünler</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Fiyat Listesi Adı</th>
+            <th>Malzeme Kodu</th>
+            <th>Malzeme Adı</th>
+            <th>Malzeme Grup Kodu</th>
+            <th>Marka Kodu</th>
+            <th>Model</th>
+            <th>Fiyat Listesi</th>
+            <th>Stok</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.PriceListName</td>
+                <td>@product.MaterialCode</td>
+                <td>@product.MaterialName</td>
+                <td>@product.MaterialGroupCode</td>
+                <td>@product.BrandCode</td>
+                <td>@product.Model</td>
+                <td>@product.PriceList</td>
+                <td>@product.Stock</td>
+                <td><a href="Products/View/@product.Id">İşlem</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+</body>

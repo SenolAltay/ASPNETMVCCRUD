@@ -1,0 +1,40 @@
+﻿@model ASPNETMVCCRUD.Models.AddProductViewModel
+
+@{
+}
+<h1>Ürün Ekle</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Fiyat Listesi Adı</label>
+        <input type="text" class="form-control" asp-for="PriceListName">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Malzeme Kodu</label>
+        <input type="text" class="form-control" asp-for="MaterialCode">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Malzeme Adı</label>
+        <input type="text" class="form-control" asp-for="MaterialName">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Malzeme Grup Kodu</label>
+        <input type="text" class="form-control" asp-for="MaterialGroupCode">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Marka Kodu</label>
+        <input type="text" class="form-control" asp-for="BrandCode">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Model</label>
+        <input type="text" class="form-control" asp-for="Model">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Fiyat Listesi</label>
+        <input type="text" class="form-control" asp-for="PriceList">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Stok</label>
+        <input type="text" class="form-control" asp-for="Stock">
+    </div>
+  <button type="submit" class="btn btn-primary">Ekle</button>
+</form>
